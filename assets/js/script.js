@@ -1,0 +1,40 @@
+$(document).ready(function() {
+
+
+$(".darken").hover(function() {
+    $(this).find("img").fadeTo(500, 1);
+}, function() {
+    $(this).find("img").fadeTo(500, 0.7);
+});
+
+$('.darken').hover(
+    function(){
+       $(this).find('.message').fadeIn(1000); 
+    },
+    function(){
+       $(this).find('.message').fadeOut(1000); 
+    }
+    );
+
+$("#link1").mouseover(function() {
+	$("#pop-up1").show();
+});
+$("#link1").mouseout(function() {
+	$("#pop-up1").hide();
+});
+
+$("#link2").mouseover(function() {
+	$("#pop-up2").show();
+});
+$("#link2").mouseout(function() {
+	$("#pop-up2").hide();
+});
+
+$("#link3").mouseover(function() {
+	$("#pop-up3").show();
+});
+$("#link3").mouseout(function() {
+	$("#pop-up3").hide();
+});
+
+})

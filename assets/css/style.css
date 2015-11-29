@@ -1,0 +1,169 @@
+body, html {
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	min-width: 960px;
+	background-color: white;
+	-webkit-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	font-family: Oswald;
+	text-transform: uppercase;
+}
+
+.page-wrapper {
+	height: 100%;
+	width: 100%;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+}
+
+#header {
+	width: 100%;
+	position: relative;
+	height: 500px;
+}
+
+#header-img {
+	width: 100%;
+	position: absolute;
+	top: -10;
+	object-fit: cover;
+	height: 620px;
+}
+
+#header-text {
+	color: white;
+	position: absolute;
+	left: 33%;
+	top: 40%;
+	font-size: 70;
+}
+
+#links {
+	position: relative;
+	top: 450;
+}
+
+#pop-up-img1 {
+	height: 45px;
+	margin-left: 274px;
+	margin-top: -35px;
+}
+
+#pop-up-img2 {
+	height: 60px;
+	margin-left: 590px;
+	margin-top: -75px;
+}
+
+#pop-up-img3 {
+	height: 50px;
+	margin-left: 925px;
+	margin-top: -65px;
+}
+
+.header-link {
+	color: white;
+	display: inline-block;
+	z-index: 10;
+	position: relative;
+	margin-left: 21%;
+	font-size: 20;
+}
+
+.text {
+	position: absolute;
+	font-size: 36px;
+	color: rgba(128, 128, 128, 0.44);
+	font-weight: 700;
+	top: 10%;
+	left: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+#work-text {
+	top: 55%;
+	left: 80%;
+}
+
+.section {
+	width: 100%;
+	position: relative;
+	height: 500px;
+}
+
+#title-section {
+
+}
+
+#blog-section {
+	height: 2500px;
+	position: relative;
+	background-color: white;
+}
+
+.grid-item { 
+	width: 300px; 
+	margin-bottom: 15px;
+}
+
+.box {
+	margin: 0px 0px 12px 0px;
+	float: left;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a.darken {
+	display: inline-block;
+	background-color: black;
+	padding: 0;
+}
+
+a.darken img {
+	display: block;
+	opacity: 0.7;
+}
+
+a.darken span {
+    display:none;
+    position:absolute;
+    top: 250px;
+    left: 65px;
+    float:left;
+    color: #ADADAD;
+}
+
+#message2 {
+	left: 405;
+}
+
+#date {
+	position: relative;
+	top: 270px;
+	left: 125px;
+}
+
+#date2 {
+	left: 440px;
+	top: 270px;
+}
+
+#main-img {
+	position: relative;
+}
+
+#about-section {
+	background-color: #F5F5F5;
+}
+
+#contact-section {
+	background-color: white;
+}
