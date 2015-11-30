@@ -1,5 +1,12 @@
 $(document).ready(function() {
 
+$("a").click(function() {
+    $('html, body').animate({
+    scrollTop: $( $.attr(this, 'href')).offset().top
+    }, 500);
+    return false;
+  })
+
 
 $(".darken").hover(function() {
     $(this).find("img").fadeTo(500, 1);

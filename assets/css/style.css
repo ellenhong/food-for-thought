@@ -2,7 +2,7 @@ body, html {
 	margin: 0 auto;
 	width: 100%;
 	height: 100%;
-	min-width: 960px;
+	min-width: 1250px;
 	background-color: white;
 	-webkit-font-smoothing: antialiased;
 	-o-font-smoothing: antialiased;
@@ -48,14 +48,14 @@ body, html {
 
 #pop-up-img1 {
 	height: 45px;
-	margin-left: 274px;
-	margin-top: -35px;
+	margin-left: 590px;
+	margin-top: -65px;
 }
 
 #pop-up-img2 {
 	height: 60px;
-	margin-left: 590px;
-	margin-top: -75px;
+	margin-left: 265px;
+	margin-top: -45px;
 }
 
 #pop-up-img3 {
@@ -93,17 +93,25 @@ body, html {
 .section {
 	width: 100%;
 	position: relative;
-	height: 500px;
+	height: 700px;
 }
 
 #title-section {
-
+	height: 500px;
 }
 
 #blog-section {
 	height: 2500px;
 	position: relative;
 	background-color: white;
+}
+
+#blog-header {
+
+}
+
+#blog-header-img {
+	margin-left: 28%;
 }
 
 .grid-item { 
@@ -125,6 +133,8 @@ a.darken {
 	display: inline-block;
 	background-color: black;
 	padding: 0;
+	width: 0px;
+	height: 0px;
 }
 
 a.darken img {
@@ -135,26 +145,64 @@ a.darken img {
 a.darken span {
     display:none;
     position:absolute;
-    top: 250px;
+    top: 275px;
     left: 65px;
     float:left;
     color: #ADADAD;
 }
 
-#message2 {
-	left: 405;
+.message {
+	position: absolute;
 }
 
-#date {
+.img-and-text {
+	width: 300px;
+	height: 300px;
+	display: inline-block;
+}
+
+#item2 {
 	position: relative;
-	top: 270px;
-	left: 125px;
+	left: 20%;
+}
+
+.message {
+	position: absolute;
+	width: 300px;
+}
+
+#date1 {
+	top: 5px;
+	left: 127px;
+}
+
+#message2 {
+	left: 404px;
 }
 
 #date2 {
-	left: 440px;
-	top: 270px;
+	top: 5px;
+	left: 445px;
 }
+
+#message3 {
+	left: 698px;
+}
+
+#date3 {
+	top: 5px;
+	left: 760px;
+}
+
+#message4 {
+
+left: 1020px;}
+
+#date4 {
+	top: 5px;
+	left: 1075px;
+}
+
 
 #main-img {
 	position: relative;
@@ -166,4 +214,8 @@ a.darken span {
 
 #contact-section {
 	background-color: white;
+}
+
+.no-scroll {
+	overflow: hidden;
 }

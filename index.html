@@ -14,7 +14,6 @@
 		photos from:
 		http://www.frenchcuisse.com/
 		http://www.hitherandthither.net/ 
-
 		fork/knife icon: Created by Marek Polakovic from Noun Project
 		cooking icon: Created by Tommy Lau from Noun Project
 		eating icon: Created by Irene Hoffman from Noun Project
@@ -27,41 +26,56 @@
 	            <div id = "header">
 	                <img src = "assets/img/header2.png" id = "header-img">
 	                <div id = "links">
-	                	<span id="pop-up1" style="position: absolute; display: none;">
-	                		<img src = "assets/img/fork-knife.png" id = "pop-up-img1">
-	                	</span>
-		                <div class = "header-link" id = "link1"><a href="#">about</a></div>
-
 		                <span id="pop-up2" style="position: absolute; display: none;">
 	                		<img src = "assets/img/cooking.png" id = "pop-up-img2">
 	                	</span>
-		                <div class = "header-link" id = "link2"><a href="#">blog</a></div>
+		                <div class = "header-link" id = "link2"><a href="#blog-section">blog</a></div>
+
+		                <span id="pop-up1" style="position: absolute; display: none;">
+	                		<img src = "assets/img/fork-knife.png" id = "pop-up-img1">
+	                	</span>
+		                <div class = "header-link" id = "link1"><a href="#about-section">about</a></div>
 
 		                <span id="pop-up3" style="position: absolute; display: none;">
 	                		<img src = "assets/img/eating.png" id = "pop-up-img3">
 	                	</span>
-		                <div class = "header-link" id = "link3"><a href="#">connect</a></div>
+		                <div class = "header-link" id = "link3"><a href="#contact-section">connect</a></div>
 		            </div>
 	            </div>
 	        </section>
 	        <section class = "section" id = "blog-section">
+	        	<div id = "blog-header">
+	        		<img src = "assets/img/blog-header.png" id = "blog-header-img">
+	        	</div>
             	<div class = "grid js-masonry" data-masonry-options='{ "itemSelector": ".grid-item", "columnWidth": 300, "gutter": 15 }' style="position: relative; height: 462px; left: 2%; top: 0.5%;">
-            		<a href = "#" class = "darken">
-						<img src = "assets/img/lemon_raspberry_sorbet.jpg" class = "box grid-item">
-						<span class = "message" id = "message1">Lemon Raspberry Sorbet</span>
-						<span class = "message" id = "date">11.27.15</span>
-					</a>
-            		<a href = "#" class = "darken">
-            			<img src = "assets/img/corned_beef_hash.jpg" class = "box grid-item">
-            			<span class = "message" id = "message2">Corned Beef Hash</span>
-						<span class = "message" id = "date2">11.24.15</span>
-            		</a>
-            		<a href = "#" class = "darken">
-            			<img src = "assets/img/chicken_pesto_pizza.jpg" class = "box grid-item">
-            		</a>
-            		<a href = "#" class = "darken">
-            			<img src = "assets/img/butternut_squash_soup.jpg" class = "box grid-item">
-            		</a>
+            		<div class = "img-and-text">
+            			<a href = "#" class = "darken">
+							<img src = "assets/img/lemon_raspberry_sorbet.jpg" class = "box grid-item">
+							<span class = "message" id = "message1">Lemon Raspberry Sorbet</span>
+							<span class = "message" id = "date1">11.27.15</span>
+						</a>
+					</div>
+					<div class = "img-and-text">
+            			<a href = "#" class = "darken">
+	            			<img src = "assets/img/corned_beef_hash.jpg" class = "box grid-item">
+	            			<span class = "message" id = "message2">Corned Beef Hash</span>
+							<span class = "message" id = "date2">11.24.15</span>
+            			</a>
+            		</div>
+            		<div class = "img-and-text">
+	            		<a href = "#" class = "darken">
+	            			<img src = "assets/img/chicken_pesto_pizza.jpg" class = "box grid-item">
+	            			<span class = "message" id = "message3">Chicken and Pesto Pizza</span>
+							<span class = "message" id = "date3">11.19.15</span>
+	            		</a>
+	            	</div>
+	            	<div class = "img-and-text">
+	            		<a href = "#" class = "darken">
+	            			<img src = "assets/img/butternut_squash_soup.jpg" class = "box grid-item">
+	            			<span class = "message" id = "message4">Butternut Squash Soup</span>
+							<span class = "message" id = "date4">11.16.15</span>
+	            		</a>
+	            	</div>
             		<a href = "#" class = "darken">
 						<img src = "assets/img/tomato_salad.jpg" class = "box grid-item">
 					</a>
