@@ -50,5 +50,13 @@ $("#link3").mouseout(function() {
 	$("#pop-up3").hide();
 });
 
+$(document).ready(function () {
+    $('.flipWrapper').click(function () {
+        $(this).find('.card').toggleClass('flipped');
+        return false;
+    });
+});
+
+
 
 })
