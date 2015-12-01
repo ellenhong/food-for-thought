@@ -1,5 +1,12 @@
 $(document).ready(function() {
 
+var container = document.querySelector('#masonry-grid');
+var masonry = new Masonry(container, {
+columnWidth: 300,
+gutter: 15,
+itemSelector: '.grid-item'
+});
+
 $("a").click(function() {
     $('html, body').animate({
     scrollTop: $( $.attr(this, 'href')).offset().top
