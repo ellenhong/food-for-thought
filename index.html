@@ -10,10 +10,12 @@
         </script> 
 		<script src = "assets/js/script.js"></script>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script src="https://cdn.rawgit.com/nnattawat/flip/v1.0.18/dist/jquery.flip.min.js"></script>
 		<!-- 
 		photos from:
 		http://www.frenchcuisse.com/
-		http://www.hitherandthither.net/ 
+ 
 		fork/knife icon: Created by Marek Polakovic from Noun Project
 		cooking icon: Created by Tommy Lau from Noun Project
 		eating icon: Created by Irene Hoffman from Noun Project
@@ -39,99 +41,168 @@
 		                <span id="pop-up3" style="position: absolute; display: none;">
 	                		<img src = "assets/img/eating.png" id = "pop-up-img3">
 	                	</span>
-		                <div class = "header-link" id = "link3"><a href="#contact-section">connect</a></div>
+		                <div class = "header-link" id = "link3"><a href="#connect-section">connect</a></div>
 		            </div>
 	            </div>
 	        </section>
 	        <section class = "section" id = "blog-section">
 	        	<div id = "blog-header">
-	        		<img src = "assets/img/blog-header.png" id = "blog-header-img">
+	        		<img src = "assets/img/blog-header2.png" class = "section-header-img">
 	        	</div>
             	<div id = "masonry-grid">
             		<div class = "grid-item">
-            			<a href = "#" class = "darken">
+            			<a class = "darken">
             				<img src = "assets/img/lemon_raspberry_sorbet.jpg" class = "grid-img">
-							<span class = "message" id = "message1">Lemon Raspberry Sorbet</span>
+							<span class = "message">Lemon Raspberry Sorbet</span>
 							<span class = "message" id = "date1">11.27.15</span>
 						</a>
 					</div>
+
 					<div class = "grid-item">
-						<a href = "#" class = "darken">
+						<a class = "darken">
             				<img src = "assets/img/corned_beef_hash.jpg" class = "grid-img">
-							<span class = "message" id = "message1">Corned Beef Hash</span>
+							<span class = "message">Corned Beef Hash</span>
 							<span class = "message" id = "date1">11.24.15</span>
 						</a>
 					</div>
 					<div class = "grid-item">
-						<a href = "#" class = "darken">
+						<a class = "darken">
             				<img src = "assets/img/chicken_pesto_pizza.jpg" class = "grid-img">
-							<span class = "message" id = "message1">Chicken and Pesto Pizza</span>
+							<span class = "message">Chicken and Pesto Pizza</span>
 							<span class = "message" id = "date1">11.19.15</span>
 						</a>
 					</div>
 					<div class = "grid-item">
-						<a href = "#" class = "darken">
+						<a class = "darken">
             				<img src = "assets/img/butternut_squash_soup.jpg" class = "grid-img">
-							<span class = "message" id = "message1">Butternut Squash Soup</span>
+							<span class = "message">Butternut Squash Soup</span>
 							<span class = "message" id = "date1">11.16.15</span>
 						</a>
 					</div>
 					<div class = "grid-item">
-						<a href = "#" class = "darken">
+						<a class = "darken">
             				<img src = "assets/img/tomato_salad.jpg" class = "grid-img">
-							<span class = "message" id = "message1">Tomato Salad</span>
+							<span class = "message">Tomato & Cheese Curd Salad</span>
 							<span class = "message" id = "date1">11.10.15</span>
 						</a>
 					</div>
+					<div class = "grid-item">
+						<a class = "darken">
+            				<img src = "assets/img/pho_bo.jpg" class = "grid-img">
+							<span class = "message">Pho Bo</span>
+							<span class = "message" id = "date1">11.5.15</span>
+						</a>
+					</div>
+					<div class = "grid-item">
+						<a class = "darken">
+            				<img src = "assets/img/pistachio_ice_cream.jpg" class = "grid-img">
+							<span class = "message">Pistachio Ice Cream</span>
+							<span class = "message" id = "date1">11.1.15</span>
+						</a>
+					</div>
+					<div class = "grid-item">
+						<a class = "darken">
+            				<img src = "assets/img/fried_apple_pie.jpg" class = "grid-img">
+							<span class = "message">Fried Apple Pie</span>
+							<span class = "message" id = "date1">10.28.15</span>
+						</a>
+					</div>
+					<div class = "grid-item">
+						<a class = "darken">
+            				<img src = "assets/img/veal_parpadelle.jpg" class = "grid-img">
+							<span class = "message">Veal Parpadelle</span>
+							<span class = "message" id = "date1">10.20.15</span>
+						</a>
+					</div>
+					<div class = "grid-item">
+	            		<a class = "darken">
+	            			<img src = "assets/img/butternut_squash_soup.jpg" class = "grid-img">
+	            			<span class = "message">Butternut Squash Soup</span>
+							<span class = "message" id = "date1">10.18.15</span>
+	            		</a>
+	            	</div>
+	            	<div class = "grid-item">
+	            		<a class = "darken">
+	            			<img src = "assets/img/raspberry_ice_cream.jpg" class = "grid-img">
+	            			<span class = "message">Raspberry Ice Cream</span>
+							<span class = "message" id = "date1">10.15.15</span>
+	            		</a>
+	            	</div>
+	            	<div class = "grid-item">
+	            		<a class = "darken">
+	            			<img src = "assets/img/steak_fries.jpg" class = "grid-img">
+	            			<span class = "message">Steak & Fries w/Garlic Chive Butter</span>
+							<span class = "message" id = "date1">10.13.15</span>
+	            		</a>
+	            	</div>
+	            	<div class = "grid-item">
+	            		<a class = "darken">
+	            			<img src = "assets/img/chocolate_doughnut.jpg" class = "grid-img">
+	            			<span class = "message">Chocolate Pistachio Almond Doughnut</span>
+							<span class = "message" id = "date1">10.10.15</span>
+	            		</a>
+	            	</div>
+	            	<div class = "grid-item">
+	            		<a class = "darken">
+	            			<img src = "assets/img/pork_gremolata.jpg" class = "grid-img">
+	            			<span class = "message">Pork Loin Gremolata</span>
+							<span class = "message" id = "date1">10.1.15</span>
+	            		</a>
+	            	</div>
+	            	<div class = "grid-item">
+	            		<a class = "darken">
+	            			<img src = "assets/img/yogurt_parfait.jpg" class = "grid-img">
+	            			<span class = "message">Yogurt Parfait</span>
+							<span class = "message" id = "date1">9.29.15</span>
+	            		</a>
+	            	</div>
+	            	<div class = "grid-item">
+	            		<a class = "darken">
+	            			<img src = "assets/img/garlic_salmon_wild_rice.jpg" class = "grid-img">
+	            			<span class = "message">Garlic Salmon w/Wild Rice</span>
+							<span class = "message" id = "date1">9.25.15</span>
+	            		</a>
+	            	</div>
+	            	<div class = "grid-item">
+	            		<a class = "darken">
+	            			<img src = "assets/img/spinach_ricotta_shells.jpg" class = "grid-img">
+	            			<span class = "message">Spinach and Ricotta Stuffed Shells</span>
+							<span class = "message" id = "date1">9.22.15</span>
+	            		</a>
+	            	</div>
+	            	<div class = "grid-item">
+	            		<a class = "darken">
+	            			<img src = "assets/img/choco_walnut_banana_bread.jpg" class = "grid-img">
+	            			<span class = "message">Chocolate Chip Walnut Banana Bread</span>
+							<span class = "message" id = "date1">9.22.15</span>
+	            		</a>
+	            	</div>
+	            	<div class = "grid-item">
+	            		<a class = "darken">
+	            			<img src = "assets/img/sweet_sour_wings.jpg" class = "grid-img">
+	            			<span class = "message">Sweet and Sour Chicken Wings</span>
+							<span class = "message" id = "date1">9.15.15</span>
+	            		</a>
+	            	</div>
+	            	<div class = "grid-item">
+	            		<a class = "darken">
+	            			<img src = "assets/img/raspberry_lemonade.jpg" class = "grid-img">
+	            			<span class = "message">Raspberry Lemonade</span>
+							<span class = "message" id = "date1">9.13.15</span>
+	            		</a>
+	            	</div>
 
 
 				</div>
-					<!-- <div class = "img-and-text">
-            			<a href = "#" class = "darken">
-	            			<img src = "assets/img/corned_beef_hash.jpg" class = "box grid-item">
-	            			<span class = "message" id = "message2">Corned Beef Hash</span>
-							<span class = "message" id = "date2">11.24.15</span>
-            			</a>
-            		</div>
-            		<div class = "img-and-text">
-	            		<a href = "#" class = "darken">
-	            			<img src = "assets/img/chicken_pesto_pizza.jpg" class = "box grid-item">
-	            			<span class = "message" id = "message3">Chicken and Pesto Pizza</span>
-							<span class = "message" id = "date3">11.19.15</span>
-	            		</a>
-	            	</div>
-	            	<div class = "img-and-text">
-	            		<a href = "#" class = "darken">
-	            			<img src = "assets/img/butternut_squash_soup.jpg" class = "box grid-item">
-	            			<span class = "message" id = "message4">Butternut Squash Soup</span>
-							<span class = "message" id = "date4">11.16.15</span>
-	            		</a>
-	            	</div>
-            		<a href = "#" class = "darken">
-						<img src = "assets/img/tomato_salad.jpg" class = "box grid-item">
-					</a>
-					<a href = "#" class = "darken">
-						<img src = "assets/img/salmon.jpg" class = "box grid-item">
-					</a>
-					<a href = "#" class = "darken">
-						<img src = "assets/img/pho_bo.jpg" class = "box grid-item">
-					</a>
-					<a href = "#" class = "darken">
-						<img src = "assets/img/pistachio_ice_cream.jpg" class = "box grid-item">
-					</a>
-					<a href = "#" class = "darken">
-						<img src = "assets/img/lobster_coconut_soup.jpg" class = "box grid-item">
-					</a>
-            	</div> -->
 	        </section>
 	        <section class = "section" id = "about-section">
-	            <div class = "text" id = "about-text">
-	                About Me
+	            <div id = "about-header">
+	                <img src = "assets/img/about-header.png" class = "section-header-img">
 	            </div>
 	        </section>
-	        <section class = "section" id = "contact-section">
-	            <div class = "text" id = "contact-text">
-	                Connect with Me
+	        <section class = "section" id = "connect-section">
+	            <div id = "connect-header">
+	                <img src = "assets/img/connect-header.png" class = "section-header-img">
 	            </div>
 	        </section>
 	    </div>
