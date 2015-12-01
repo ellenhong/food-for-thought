@@ -23,9 +23,9 @@ $(".darken").hover(function() {
 });
 
 $('.darken').hover(function(){
-   $(this).find('.message').fadeIn(1000); 
+   $(this).find('.message').fadeIn(750); 
 }, function(){
-   $(this).find('.message').fadeOut(1000); 
+   $(this).find('.message').fadeOut(750); 
 });
 
 
@@ -50,12 +50,12 @@ $("#link3").mouseout(function() {
 	$("#pop-up3").hide();
 });
 
-$(document).ready(function () {
-    $('.flipWrapper').click(function () {
-        $(this).find('.card').toggleClass('flipped');
-        return false;
-    });
+
+$('.flipWrapper').click(function () {
+    $(this).find('.card').toggleClass('flipped');
+    return false;
 });
+
 
 
 
