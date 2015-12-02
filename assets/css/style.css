@@ -70,23 +70,6 @@ body, html {
 	margin-top: -35px;
 }
 
-.text {
-	position: absolute;
-	font-size: 36px;
-	color: rgba(128, 128, 128, 0.44);
-	font-weight: 700;
-	top: 10%;
-	left: 50%;
-	-webkit-transform: translateX(-50%) translateY(-50%);
-	-moz-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);
-}
-
-#work-text {
-	top: 55%;
-	left: 80%;
-}
-
 .section {
 	width: 100%;
 	position: relative;
@@ -189,16 +172,9 @@ a.darken span {
 	margin-top: -45px;
 }
 
-#three-lines-full-ing {
-	font-size: 0.75em;
-	margin-top: -60px;
-}
-
 #three-lines-ing {
 	font-size: 0.75em;
 	margin-top: -60px;
-	margin-left: 60px;
-	width: 200px;
 }
 
 #pizza-ing {
@@ -206,7 +182,7 @@ a.darken span {
 	margin-top: -40px;
 }
 
-#date1 {
+#date {
 	top: 5px;
 }
 
@@ -284,12 +260,14 @@ a.darken span {
 .flipWrapper {
 	-webkit-perspective: 1000;
 	-moz-perspective: 1000;
+	perspective: 1000;
 	position: relative;
 }
 
 .flipWrapper .card.flipped {
 	-webkit-transform: rotatey(180deg);
 	-moz-transform: rotatey(180deg);
+	transform: rotatey(180deg);
 }
 
 .flipWrapper .card {
@@ -299,6 +277,8 @@ a.darken span {
 	-webkit-transition: 0.7s;
 	-moz-transform-style: preserve-3d;
 	-moz-transition: 0.7s;
+	transform-style: preserve -3d;
+	transition: 0.7s;
 }
 
 .flipWrapper .card .face {
@@ -307,6 +287,7 @@ a.darken span {
 	position: absolute;
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
 }
 
 .flipWrapper .card .front {
@@ -320,6 +301,7 @@ a.darken span {
 .flipWrapper .card .back {
 	-webkit-transform: rotatey(-180deg);
 	-moz-transform: rotatey(-180deg);
+	transform: rotatey(-180deg);
 	cursor: pointer;
 	border-radius: 10px;
 }
@@ -333,6 +315,4 @@ a.darken span {
 .flipWrapper .back {
 	transform: rotateY(180deg);
 }
-
-
 

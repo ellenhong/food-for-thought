@@ -70,5 +70,4 @@ $('.flipWrapper').click(function () {
 });
 
 
-
 })
