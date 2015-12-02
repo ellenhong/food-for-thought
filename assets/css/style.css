@@ -47,6 +47,10 @@ body, html {
 	top: 450;
 }
 
+.shadow {
+   text-shadow: 0 0 5px #000;
+}
+
 #pop-up-img1 {
 	height: 42px;
 	position: absolute;
@@ -311,14 +315,6 @@ a.darken span {
 	-webkit-transform: rotatey(-180deg);
 	cursor: pointer;
 	border-radius: 10px;
-}
-
-.shadow {
-    -moz-box-shadow: 3px 3px 4px #555;
-    -webkit-box-shadow: 3px 3px 4px #555;
-    box-shadow: 3px 3px 4px #555; /* For IE 8 */    
-    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#555')"; /* For IE 5.5 - 7 */
-    filter: progid:DXImageTransform.Microsoft.Shadow(Strength = 4, Direction = 135, Color = '#cccccc');
 }
 
 
