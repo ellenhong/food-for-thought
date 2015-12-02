@@ -4,7 +4,8 @@ var container = document.querySelector('#masonry-grid');
 var masonry = new Masonry(container, {
 	columnWidth: 300,
 	gutter: 15,
-	itemSelector: '.grid-item'
+	itemSelector: '.grid-item',
+	isFitWidth: true
 });
 
 
@@ -23,6 +24,18 @@ $(".darken").hover(function() {
 });
 
 $('.darken').hover(function(){
+   $(this).find('.message').fadeIn(750); 
+}, function(){
+   $(this).find('.message').fadeOut(750); 
+});
+
+$(".about-darken").hover(function() {
+    $(this).find("img").fadeTo(500, 1);
+}, function() {
+    $(this).find("img").fadeTo(500, 0.7);
+});
+
+$('.about-darken').hover(function(){
    $(this).find('.message').fadeIn(750); 
 }, function(){
    $(this).find('.message').fadeOut(750); 
@@ -51,12 +64,23 @@ $("#link3").mouseout(function() {
 });
 
 
+
+
 $('.flipWrapper').click(function () {
     $(this).find('.card').toggleClass('flipped');
     return false;
 });
 
+$("#float-about").hover(function(e){
+    e.preventDefault();
+    $(this).find(".popup").fadeIn("slow");
+});
 
+// $().hover(function() {
+//   $(this).addClass('shadow');
+// }, function() {
+//   $(this).removeClass('shadow');
+// });
 
 
 })

@@ -38,7 +38,7 @@ body, html {
 	display: inline-block;
 	z-index: 10;
 	position: relative;
-	margin-left: 22%;
+	margin-left: 21%;
 	font-size: 20;
 }
 
@@ -51,19 +51,18 @@ body, html {
 	height: 42px;
 	position: absolute;
 	margin-top: -32px;
-	margin-left: 6px;
+	margin-left: 12px;
 }
 
 #pop-up-img2 {
 	height: 60px;=:265px;
 	position: absolute;
-	margin-left: -5px;
 	margin-top: -42px;
 }
 
 #pop-up-img3 {
 	height: 50px;
-	margin-left: 12px;
+	margin-left: 17px;
 	margin-top: -35px;
 }
 
@@ -113,10 +112,8 @@ body, html {
 }
 
 #masonry-grid {
-	margin-left: 15px;
-	margin-right: 15px;
-	margin-top: 20px;
-	margin-bottom: 100px;
+	margin: 0 auto;
+	margin-bottom: 200px;
 }
 
 .grid-item {
@@ -144,6 +141,7 @@ body, html {
 a {
 	text-decoration: none;
 	color: white;
+	padding: 5px;
 }
 
 a.darken {
@@ -175,11 +173,11 @@ a.darken span {
 .ingredients {
 	position: absolute;
 	width: 300px;
-	color: #796B6B;
+	color: #675B5B;
 	text-align: center;
 	margin-top: -35px;
 	font-size: 0.8em;
-	background-color: white;
+	background-color: rgba(255, 255, 255, 0.67);
 }
 
 #two-lines-ing {
@@ -222,13 +220,38 @@ a.darken span {
 	width: 100%;
 }
 
-#about-header {
-	width: inherit;
+#about-text {
+	color: #757272;
+	margin: 40 auto;
+	width: 1113px;
 }
 
-#about-text {
-	color: black;
+#about-darken {
+	background: none;
+	width: 200px;
+	margin: 10px;
 }
+
+#about-message {
+	position: absolute;
+	text-align: center;
+	margin-left: -52px;
+	margin-top: 240px;
+}
+
+#top-about-message {
+	position: absolute;
+	text-align: center;
+	margin-top: 15px;
+	margin-left: -45px;
+	font-size: 0.6em;
+}
+
+
+.about-img {
+	height: 200px;
+}
+
 
 #connect-section {
 	background-color: white;
@@ -247,6 +270,10 @@ a.darken span {
 .icon {
 	height: 120px;
 	margin-left: 50px;
+}
+
+#icon-darken {
+	width: auto;
 }
 
 
@@ -285,3 +312,14 @@ a.darken span {
 	cursor: pointer;
 	border-radius: 10px;
 }
+
+.shadow {
+    -moz-box-shadow: 3px 3px 4px #555;
+    -webkit-box-shadow: 3px 3px 4px #555;
+    box-shadow: 3px 3px 4px #555; /* For IE 8 */    
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#555')"; /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength = 4, Direction = 135, Color = '#cccccc');
+}
+
+
+
