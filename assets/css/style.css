@@ -283,11 +283,13 @@ a.darken span {
 
 .flipWrapper {
 	-webkit-perspective: 1000;
+	-moz-perspective: 1000;
 	position: relative;
 }
 
 .flipWrapper .card.flipped {
 	-webkit-transform: rotatey(180deg);
+	-moz-transform: rotatey(180deg);
 }
 
 .flipWrapper .card {
@@ -295,6 +297,8 @@ a.darken span {
 	height: 100%;
 	-webkit-transform-style: preserve-3d;
 	-webkit-transition: 0.7s;
+	-moz-transform-style: preserve-3d;
+	-moz-transition: 0.7s;
 }
 
 .flipWrapper .card .face {
@@ -302,6 +306,7 @@ a.darken span {
 	height: 100%;
 	position: absolute;
 	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
 }
 
 .flipWrapper .card .front {
@@ -311,10 +316,22 @@ a.darken span {
 	cursor: pointer;
 	border-radius: 10px;
 }
+
 .flipWrapper .card .back {
 	-webkit-transform: rotatey(-180deg);
+	-moz-transform: rotatey(-180deg);
 	cursor: pointer;
 	border-radius: 10px;
+}
+
+/* for Firefox */
+.flipWrapper .front {
+	z-index: 2;
+	transform: rotateY(0deg);
+}
+
+.flipWrapper .back {
+	transform: rotateY(180deg);
 }
 
 
