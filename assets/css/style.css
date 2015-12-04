@@ -20,17 +20,15 @@ body, html {
 }
 
 #header {
-	width: 100%;
 	position: relative;
-	height: 500px;
+	height: 100%;
 }
 
 #header-img {
 	width: 100%;
 	position: absolute;
-	top: -10;
 	object-fit: cover;
-	height: 620px;
+	height: inherit;
 }
 
 .header-link {
@@ -43,8 +41,9 @@ body, html {
 }
 
 #links {
-	position: relative;
-	top: 450;
+	position: absolute;
+	bottom: 25px;
+	width: 100%;
 }
 
 .shadow {
@@ -82,7 +81,7 @@ body, html {
 }
 
 #title-section {
-	height: 500px;
+	height: 100%;
 }
 
 #blog-section {
