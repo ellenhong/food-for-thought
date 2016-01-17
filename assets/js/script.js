@@ -4,7 +4,7 @@ $(document).ready(function() {
 var container = document.querySelector('#masonry-grid');
 var masonry = new Masonry(container, {
 	columnWidth: 300,
-	gutter: 15,
+	gutter: 30,
 	itemSelector: '.grid-item',
 	isFitWidth: true
 });
