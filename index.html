@@ -1,0 +1,413 @@
+<html>
+	<head>
+		<title> Food for Thought</title>
+		<link rel="stylesheet" href="assets/css/style.css">
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+		<script src="assets/masonry-docs/masonry.pkgd.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+        </script> 
+		<script src = "assets/js/script.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+		<!-- 
+		Photo credit:
+		http://www.frenchcuisse.com/
+ 
+		fork/knife icon: Created by Marek Polakovic from Noun Project
+		cooking icon: Created by Tommy Lau from Noun Project
+		eating icon: Created by Irene Hoffman from Noun Project
+		-->
+
+	</head>
+	<body>
+		<div class = "page-wrapper">
+			<section class = "section" id = "title-section">
+	            <div id = "header">
+	                <img src = "assets/img/header2.png" id = "header-img">
+	                <div id = "links">
+		                <div class = "header-link" id = "link2">
+		                	<span id="pop-up2" style="position: absolute; display: none;">
+		                		<img src = "assets/img/cooking.png" id = "pop-up-img2">
+		                	</span>
+		                	<a href="#blog-section" class = "hlink">blog</a>
+		                </div>
+
+		                <div class = "header-link" id = "link1">
+		                	<span id="pop-up1" style="position: absolute; display: none;">
+		                		<img src = "assets/img/fork-knife.png" id = "pop-up-img1">
+		                	</span>
+		                	<a href="#about-section" class = "hlink">about</a>
+		                </div>
+
+		                <div class = "header-link" id = "link3">
+		                	<span id="pop-up3" style="position: absolute; display: none;">
+		                		<img src = "assets/img/eating.png" id = "pop-up-img3">
+		                	</span>
+	                		<a href="#connect-section" class = "hlink">connect</a>
+	                	</div>
+		            </div>
+	            </div>
+	        </section>
+	        <section class = "section" id = "blog-section">
+	        	<div id = "blog-header">
+	        		<img src = "assets/img/blog-header2.png" class = "section-header-img">
+	        	</div>
+            	<div id = "masonry-grid">
+            		<div class = "flipWrapper grid-item">
+            			<div class = "card">
+		            		<div class = "face front">
+		            			<a class = "darken">
+		            				<img src = "assets/img/lemon_raspberry_sorbet.jpg" class = "grid-img">
+									<span class = "message">Lemon Raspberry Sorbet</span>
+									<span class = "message" id = "date">11.27.15</span>
+								</a>
+							</div>
+							<div class = "face back">
+								<img src = "assets/img/lemon_raspberry_sorbet_ing.jpg" class = "grid-img">
+								<div class = "ingredients">RASPBERRIES, LEMON, SUGAR, WATER.</div>
+							</div>
+						</div>
+					</div>
+
+					<div class = "flipWrapper grid-item">
+						<div class = "card">
+		            		<div class = "face front">
+								<a class = "darken">
+			        				<img src = "assets/img/corned_beef_hash.jpg" class = "grid-img">
+									<span class = "message">Corned Beef Hash</span>
+									<span class = "message" id = "date">11.24.15</span>
+								</a>
+							</div>
+							<div class = "face back">
+								<img src = "assets/img/corned_beef_hash_ing.jpg" class = "grid-img">
+								<div class = "ingredients">BRISKET, CHIVES, ONION, GARLIC, POTATOES, EGG.</div>
+							</div>
+						</div>
+					</div>
+					<div class = "flipWrapper grid-item">
+						<div class = "card">
+		            		<div class = "face front">
+								<a class = "darken">
+		            				<img src = "assets/img/chicken_pesto_pizza.jpg" class = "grid-img">
+									<span class = "message">Chicken and Pesto Pizza</span>
+									<span class = "message" id = "date">11.19.15</span>
+								</a>
+							</div>
+							<div class = "face back">
+								<img src = "assets/img/chicken_pesto_pizza_ing.jpg" class = "grid-img">
+								<div class = "ingredients" id = "pizza-ing">CHICKEN, DOUGH, OLIVE OIL, PESTO, MOZZARELLA, OREGANO, THYME, TOMATO, SALT, PEPPER, BASIL, RED ONION.</div>
+							</div>
+						</div>
+					</div>
+					<div class = "flipWrapper grid-item">
+						<div class = "card">
+		            		<div class = "face front">
+								<a class = "darken">
+			        				<img src = "assets/img/tomato_soup.jpg" class = "grid-img">
+									<span class = "message">Roasted Tomato Garlic Soup</span>
+									<span class = "message" id = "date">11.16.15</span>
+								</a>
+							</div>
+							<div class = "face back">
+								<img src = "assets/img/tomato_soup_ing.jpg" class = "grid-img">
+								<div class = "ingredients" id = "two-lines-ing">TOMATOES, OREGANO, THYME, GARLIC, MILK, CHICKEN STOCK, OIL, SALT, PEPPER.</div>
+							</div>
+						</div>
+					</div>
+					<div class = "flipWrapper grid-item">
+						<div class = "card">
+		            		<div class = "face front">
+								<a class = "darken">
+		            				<img src = "assets/img/tomato_salad.jpg" class = "grid-img">
+									<span class = "message">Tomato & Cheese Curd Salad</span>
+									<span class = "message" id = "date">11.10.15</span>
+								</a>
+							</div>
+							<div class = "face back">
+								<img src = "assets/img/tomato_salad_ing.jpg" class = "grid-img">
+								<div class = "ingredients" id = "three-lines-ing">CHERRY TOMATOES, BASIL, CHIVES, CHEESE CURDS, MAPLE SYRUP, GARLIC, DIJON MUSTARD, OLIVE OIL, SHERRY WINE VINEGAR.</div>
+							</div>
+						</div>
+					</div>
+					<div class = "flipWrapper grid-item">
+						<div class = "card">
+		            		<div class = "face front">
+								<a class = "darken">
+		            				<img src = "assets/img/pho_bo.jpg" class = "grid-img">
+									<span class = "message">Pho Bo</span>
+									<span class = "message" id = "date">11.5.15</span>
+								</a>
+							</div>
+							<div class = "face back">
+								<img src = "assets/img/pho_bo_ing.jpg" class = "grid-img">
+								<div class = "ingredients" id = "three-lines-ing">BEEF BONES, CHICKEN BROTH, FISH SAUCE, WATER, CLOVES, CARDAMOM, STAR ANISE, CINNAMON STICKS, BASIL, RICE NOODLES, ONION, CILANTRO, GINGER, SUGAR, SCALLION.</div>
+							</div>
+						</div>
+					</div>
+					<div class = "flipWrapper grid-item">
+						<div class = "card">
+		            		<div class = "face front">
+								<a class = "darken">
+		            				<img src = "assets/img/pistachio_ice_cream.jpg" class = "grid-img">
+									<span class = "message">Pistachio Ice Cream</span>
+									<span class = "message" id = "date">11.1.15</span>
+								</a>
+							</div>
+							<div class = "face back">
+								<img src = "assets/img/pistachio_ice_cream_ing.jpg" class = "grid-img">
+								<div class = "ingredients" id = "two-lines-ing">PISTACHIOS, GROUND ALMONDS, HALF&HALF, CORN SYRUP, CORNSTARCH, VANILLA, ALMOND EXTRACT.</div>
+							</div>
+						</div>
+					</div>
+					<div class = "flipWrapper grid-item">
+						<div class = "card">
+		            		<div class = "face front">
+								<a class = "darken">
+		            				<img src = "assets/img/fried_apple_pie.jpg" class = "grid-img">
+									<span class = "message">Fried Apple Pie</span>
+									<span class = "message" id = "date">10.28.15</span>
+								</a>
+							</div>
+							<div class = "face back">
+								<img src = "assets/img/fried_apple_pie_ing.jpg" class = "grid-img">
+								<div class = "ingredients">FLOUR, BROWN SUGAR, APPLES, CINNAMON, BUTTER, OATS.</div>
+							</div>
+						</div>
+					</div>
+					<div class = "flipWrapper grid-item">
+						<div class = "card">
+		            		<div class = "face front">
+								<a class = "darken">
+		            				<img src = "assets/img/veal_parpadelle.jpg" class = "grid-img">
+									<span class = "message">Veal Parpadelle</span>
+									<span class = "message" id = "date">10.20.15</span>
+								</a>
+							</div>
+							<div class = "face back">
+								<img src = "assets/img/veal_parpadelle_ing.jpg" class = "grid-img">
+								<div class = "ingredients" id = "two-lines-ing">GROUND VEAL, CELERY, CARROT, ONION, GARLIC, BUTTER, LEMON, BAY LEAF, MUSHROOMS, GREEN ONIONS.</div>
+							</div>
+						</div>
+					</div>
+					<div class = "flipWrapper grid-item">
+						<div class = "card">
+		            		<div class = "face front">
+			            		<a class = "darken">
+			            			<img src = "assets/img/red_snapper.jpg" class = "grid-img">
+			            			<span class = "message">Pan Seared Red Snapper</span>
+									<span class = "message" id = "date">10.18.15</span>
+			            		</a>
+		            		</div>
+		            		<div class = "face back">
+		            			<img src = "assets/img/red_snapper_ing.jpg" class = "grid-img">
+		            			<div class = "ingredients" id = "two-lines-ing">RED SNAPPER, DIJON, OLIVE OIL, FRISEE SALAD, LEMON, GARLIC, SHALLOT, SALT, PEPPER, BUTTER, POTATOES.</div>
+		            		</div>
+		            	</div>
+	            	</div>
+	            	<div class = "flipWrapper grid-item">
+	            		<div class = "card">
+		            		<div class = "face front">
+			            		<a class = "darken">
+			            			<img src = "assets/img/yogurt_parfait.jpg" class = "grid-img">
+			            			<span class = "message">Yogurt Parfait</span>
+									<span class = "message" id = "date">10.16.15</span>
+			            		</a>
+			            	</div>
+			            	<div class = "face back">
+			            		<img src = "assets/img/yogurt_parfait_ing.jpg" class = "grid-img">
+			            		<div class = "ingredients" id = "two-lines-ing">VANILLA YOGURT, STRAWBERRY YOGURT, STRAWBERRIES, GRANOLA, BLUEBERRIES, RASPBERRIES, LIME.</div>
+			            	</div>
+			            </div>
+	            	</div>
+	            	<div class = "flipWrapper grid-item">
+	            		<div class = "card">
+		            		<div class = "face front">
+			            		<a class = "darken">
+			            			<img src = "assets/img/steak_fries.jpg" class = "grid-img">
+			            			<span class = "message">Steak & Fries w/Garlic Chive Butter</span>
+									<span class = "message" id = "date">10.13.15</span>
+			            		</a>
+			            	</div>
+			            	<div class = "face back">
+			            		<img src = "assets/img/steak_fries_ing.jpg" class = "grid-img">
+			            		<div class = "ingredients" id = "two-lines-ing">BAVETTE, CHIVES, GARLIC, BUTTER, POTATOES, MONTREAL STEAK SPICE.</div>
+			            	</div>
+			            </div>
+	            	</div>
+	            	<div class = "flipWrapper grid-item">
+	            		<div class = "card">
+		            		<div class = "face front">
+			            		<a class = "darken">
+			            			<img src = "assets/img/chocolate_doughnut.jpg" class = "grid-img">
+			            			<span class = "message">Chocolate Pistachio Almond Doughnut</span>
+									<span class = "message" id = "date">10.10.15</span>
+			            		</a>
+			            	</div>
+			            	<div class = "face back">
+			            		<img src = "assets/img/chocolate_doughnut_ing.jpg" class = "grid-img">
+			            		<div class = "ingredients">DOUGH, CHOCOLATE, NUTS, SUGAR, CREAM, ICING SUGAR.</div>
+			            	</div>
+			            </div>
+	            	</div>
+	            	<div class = "flipWrapper grid-item">
+	            		<div class = "card">
+		            		<div class = "face front">
+			            		<a class = "darken">
+			            			<img src = "assets/img/pork_gremolata.jpg" class = "grid-img">
+			            			<span class = "message">Pork Loin Gremolata</span>
+									<span class = "message" id = "date">10.1.15</span>
+			            		</a>
+			            	</div>
+			            	<div class = "face back">
+			            		<img src = "assets/img/pork_gremolata_ing.jpg" class = "grid-img">
+			            		<div class = "ingredients">PORK LOIN, PARSLEY, LEMON, ONION, GARLIC, DRIED HERBS.</div>
+			            	</div>
+			            </div>
+	            	</div>
+	            	<div class = "flipWrapper grid-item">
+	            		<div class = "card">
+		            		<div class = "face front">
+			            		<a class = "darken">
+			            			<img src = "assets/img/broccoli_soup.jpg" class = "grid-img">
+			            			<span class = "message">Broccoli Soup w/Bacon Bits</span>
+									<span class = "message" id = "date">9.29.15</span>
+			            		</a>
+			            	</div>
+			            	<div class = "face back">
+			            		<img src = "assets/img/broccoli_soup_ing.jpg" class = "grid-img">
+			            		<div class = "ingredients" id = "two-lines-ing">BROCCOLI, OREGANO, THYME, ONION, GARLIC, BUTTER, BAY LEAF, BACON.</div>
+			            	</div>
+			            </div>
+	            	</div>
+
+	            	<div class = "flipWrapper grid-item">
+	            		<div class = "card">
+		            		<div class = "face front">
+			            		<a class = "darken">
+			            			<img src = "assets/img/garlic_salmon_wild_rice.jpg" class = "grid-img">
+			            			<span class = "message">Garlic Salmon w/Wild Rice</span>
+									<span class = "message" id = "date">9.25.15</span>
+			            		</a>
+			            	</div>
+			            	<div class = "face back">
+			            		<img src = "assets/img/garlic_salmon_wild_rice_ing.jpg" class = "grid-img">
+			            		<div class = "ingredients" id = "two-lines-ing">SALMON, GARLIC, ONION, BUTTER, WILD RICE, CHICKEN BROTH, WHITE WINE.</div>
+			            	</div>
+			            </div>
+	            	</div>
+	            	<div class = "flipWrapper grid-item">
+	            		<div class = "card">
+		            		<div class = "face front">
+			            		<a class = "darken">
+			            			<img src = "assets/img/spinach_ricotta_shells.jpg" class = "grid-img">
+			            			<span class = "message">Spinach and Ricotta Stuffed Shells</span>
+									<span class = "message" id = "date">9.22.15</span>
+			            		</a>
+			            	</div>
+			            	<div class = "face back">
+			            		<img src = "assets/img/spinach_ricotta_shells_ing.jpg" class = "grid-img">
+			            		<div class = "ingredients" id = "three-lines-ing">GROUND BEEF, ONION, GARLIC, SAN MARZANO TOMATOES, BASIL, PARSLEY, SPINACH, CHICKEN BROTH, RICOTTA CHEESE, PASTA SHELLS.</div>
+			            	</div>
+			            </div>
+	            	</div>
+	            	<div class = "flipWrapper grid-item">
+	            		<div class = "card">
+		            		<div class = "face front">
+			            		<a class = "darken">
+			            			<img src = "assets/img/choco_walnut_banana_bread.jpg" class = "grid-img">
+			            			<span class = "message">Chocolate Chip Walnut Banana Bread</span>
+									<span class = "message" id = "date">9.20.15</span>
+			            		</a>
+			            	</div>
+			            	<div class = "face back">
+			            		<img src = "assets/img/choco_walnut_banana_bread_ing.jpg" class = "grid-img">
+			            		<div class = "ingredients" id = "three-lines-ing">BANANA, OIL, BUTTERMILK, VANILLA, SUGAR, CINNAMON, GROUND COFFEE, EGG, CHOCOLATE CHIPS, WALNUTS, FLOUR.</div>
+			            	</div>
+			            </div>
+	            	</div>
+	            	<div class = "flipWrapper grid-item">
+	            		<div class = "card">
+		            		<div class = "face front">
+			            		<a class = "darken">
+			            			<img src = "assets/img/sweet_sour_wings.jpg" class = "grid-img">
+			            			<span class = "message">Sweet and Sour Chicken Wings</span>
+									<span class = "message" id = "date">9.15.15</span>
+			            		</a>
+			            	</div>
+			            	<div class = "face back">
+			            		<img src = "assets/img/sweet_sour_wings_ing.jpg" class = "grid-img">
+			            		<div class = "ingredients" id = "two-lines-ing">CHICKEN WINGS, KETCHUP, CHILI GARLIC SAUCE, OREGANO, THYME, GARLIC, MAPLE SYRUP, SOYA SAUCE, APPLE CIDER.</div>
+			            	</div>
+			            </div>
+	            	</div>
+	            	<div class = "flipWrapper grid-item">
+	            		<div class = "card">
+		            		<div class = "face front">
+			            		<a class = "darken">
+			            			<img src = "assets/img/raspberry_lemonade.jpg" class = "grid-img">
+			            			<span class = "message">Raspberry Lemonade</span>
+									<span class = "message" id = "date">9.13.15</span>
+			            		</a>
+			            	</div>
+			            	<div class = "face back">
+			            		<img src = "assets/img/raspberry_lemonade_ing.jpg" class = "grid-img">
+			            		<div class = "ingredients">RASPBERRIES, WATER, SUGAR, LEMON, MINT.</div>
+			            	</div>
+			            </div>
+	            	</div>
+				</div>
+	        </section>
+	        <section class = "section" id = "about-section">
+	            <div id = "about-header">
+	                <img src = "assets/img/about-header.png" class = "section-header-img">
+	            </div>
+	            <div id = "about-text">
+	            	<a class = "darken" id = "about-darken">
+	            		<img src = "assets/img/about-sf.png" class = "about-img">
+	            		<span class = "message" id = "about-message">San Franciscan</span>
+	            	</a>
+	            	<a class = "darken" id = "about-darken">
+	            		<img src = "assets/img/about-travel.png" class = "about-img">
+	            		<span class = "message" id = "about-message">Traveler</span>
+	            	</a>
+	            	<a class = "darken" id = "about-darken">
+	            		<img src = "assets/img/about-puppy.png" class = "about-img">
+	            		<span class = "message" id = "about-message">Puppy Lover</span>
+	            	</a>
+	            	<a class = "darken" id = "about-darken">
+	            		<img src = "assets/img/about-sunset.png" class = "about-img">
+	            		<span class = "message" id = "about-message">Sunset Admirer</span>
+	            	</a>
+	            	<a class = "darken" id = "about-darken">
+	            		<img src = "assets/img/about-foodie.png" class = "about-img">
+	            		<span class = "message" id = "top-about-message">And of course...</span>
+	            		<span class = "message" id = "about-message">Foodie</span>
+	            	</a>
+	            </div>
+	        </section>
+	        <section class = "section" id = "connect-section">
+	            <div id = "connect-header">
+	                <img src = "assets/img/connect-header.png" class = "section-header-img">
+	            </div>
+	            <div id = "connect-icons">
+	            	<a href = "#" class = "darken" id = "icon-darken">
+	            		<img src = "assets/img/facebook-icon2.png" class = "icon">
+	            	</a>
+	            	<a href = "#" class = "darken" id = "icon-darken">
+	            		<img src = "assets/img/instagram-icon.png" class = "icon">
+	            	</a>
+	            	<a href = "#" class = "darken" id = "icon-darken">
+	            		<img src = "assets/img/twitter-icon.png" class = "icon">
+	            	</a>
+	            	<a href = "#" class = "darken" id = "icon-darken">
+	            		<img src = "assets/img/gmail-icon2.png" class = "icon">
+	            	</a>
+	            </div>
+	        </section>
+	    </div>
+	</body>
+</html>
